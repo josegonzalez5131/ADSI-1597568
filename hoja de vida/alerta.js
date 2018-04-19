@@ -1,0 +1,1 @@
+alert("bienvenidos a la hoja de vida de Jose Luis Gonzalez")

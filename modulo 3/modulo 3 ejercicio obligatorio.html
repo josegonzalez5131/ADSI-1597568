@@ -1,0 +1,45 @@
+
+<!DOCTYPE html><html>
+<head>
+  <center>
+  <title>Date</title>
+  </center>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <center>
+  <h1 id="h1"></h1>
+  <h2 id="nombre">Jose Luis Gonzalez</h2>
+  <h2 id="h2">La fecha y la hora son:</h2>
+  <div id="fecha"></div>
+  <div id="instrucciones">
+    <ol>
+      <li id="1"></li>
+      <li id="2"></li>
+      <li id="3"></li>
+      <li id="4"></li>
+      <li id="5"></li>
+    </ol>
+  </div>
+
+
+ <script type="text/javascript">
+  var fecha = new Date();
+  var msj;
+
+  if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+  else if (fecha.getHours() < 12) { msj = "Buenos días";}
+  else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+  else                            { msj = "Buenas noches";}
+
+  document.getElementById("h1").innerHTML    = msj;
+  document.getElementById("fecha").innerHTML = fecha;
+  document.getElementById("1").innerText = "innerHTML: " + document.getElementById("h2").innerHTML;
+  document.getElementById("2").innerText = "outerHTML: " + document.getElementById("h1").outerHTML;
+  document.getElementById("3").innerText = "location.href: " + location.href;
+  document.getElementById("4").innerText = "location: " + location;
+  document.getElementById("5").innerText = "screen.width x screen.heigth: " + screen.width + " x " + screen.height;
+</script>
+</center>
+</body>
+</html>

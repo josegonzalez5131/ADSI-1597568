@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html><head><title>Calculadora</title>
+            <meta charset="utf-8">
+	<!--
+  <script type="text/javascript" 
+          src="jquery-3.1.0.min.js">
+	  
+  </script>
+-->
+			<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+	
+	
+	<style type="text/css">
+	body   { 
+	background:  linear-gradient(60deg, white, white);
+	text-align:  center; 
+		}	
+	</style>
+
+  <script type="text/javascript">
+	  
+  $(function() {
+	  	  var acc =0, op="";
+
+     $("#n1").on("click", 
+      function(){ $("#n1").val("");}
+    );
+
+	  
+	  
+    $("#cuadrado").on("click",function() {
+        var num = $("#n1");
+        num.val(num.val() * num.val())}
+    );
+	  
+    $("#2an").on("click",function() {
+        var num = $("#n1");
+		var res = Math.pow(2,num.val());
+        num.val(res)}
+    );
+
+    $("#inverso").on("click",function() {
+        var num = $("#n1");
+        num.val(1/num.val())}
+    );
+
+    $("#raiz").on("click",function() {
+        var num = $("#n1");
+		var res = Math.sqrt(num.val());
+        num.val(res)}
+    );
+
+    $("#abs").on("click",function() {
+        var num = $("#n1");
+		
+		if(num.val()>=0) {
+		var res = Math.floor(num.val());
+		} else if (num.val()<0) {
+		var res = -Math.ceil(num.val());
+		}
+		num.val(res);
+	}
+	);
+
+    $("#factorial").on("click",function() {
+        var num = $("#n1");
+		var res = 1;
+		for(let i=2; i<=num.val(); i++){
+			res *= i;
+		}
+		num.val(res);
+	}
+    );
+	  
+	  ///////////////////////////
+
+    $("#mas").on("click",function() {
+        var num = $("#n1");
+		acc = num.val();
+		op = "+";
+		limpiar();
+	}
+    );
+
+    $("#menos").on("click",function() {
+        var num = $("#n1");
+		acc = num.val();
+		op = "-";
+		limpiar();
+	}
+    );
+
+    $("#multiplicacion").on("click",function() {
+        var num = $("#n1");
+		acc = num.val();
+		op = "*";
+		limpiar();
+	}
+    );
+
+    $("#division").on("click",function() {
+        var num = $("#n1");
+		acc = num.val();
+		op = "/";
+		limpiar();
+	}
+    );
+
+    $("#potencia").on("click",function() {
+        var num = $("#n1");
+		acc = num.val();
+		op = "^";
+		limpiar();
+	}
+    );
+
+    $("#sumatorio").on("click",function() {
+        var num = $("#n1");
+		var res = 0;
+		var lista = num.val().split(",")
+		for(let i = 0; i<lista.length;i++) {
+			res += +lista[i];
+		}
+		num.val(res);
+	}
+    );
+
+    $("#productorio").on("click",function() {
+        var num = $("#n1");
+		var res = 1;
+		var lista = num.val().split(",")
+		for(let i = 0; i<lista.length;i++) {
+			res *= +lista[i];
+		}
+		num.val(res);
+	}
+    );
+		
+    $("#igual").on("click",function() {
+		var num = $("#n1");
+		if (op === "+") {
+			num.val((+acc + +num.val()));
+		}else if (op === "-") {
+			num.val((+acc - +num.val()));
+		}else if (op === "*") {
+			num.val((+acc * +num.val()));
+		}else if (op === "/") {
+			num.val((+acc / +num.val()));
+		}else if (op === "^") {
+			num.val(Math.pow(+acc, +num.val()));
+		}
+		op = "";
+	}
+	);
+	  
+	 function limpiar(){ $("#n1").val("");}
+
+  });
+  </script>
+	
+	
+</head><body>
+<span style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace">
+		<h3>Buenos días, bienvenido a la calculadora de Jose Luis Gonzalez.</h3> <br>
+	  <p>En esta calculadora tenemos operadores unitarios(<em>x^2, sqrt(x) y parte_entera(x)</em>). Para usarlos, escribe el número y pulsa el botón correspondiente.</p>
+	Para utilizar los operadores binarios(<em>+ - * / x^y</em>), escribe el primer número, pulsa el operador correspondiente, escribe el segundo número, y pulsa el botón. <em>=</em>
+	<p>Para utilizar los operadoes con n operandos, separa los numeros con comas.</p>
+	</span>
+	<div>
+  Número:
+  <input type="text" id="n1">
+  <button id="igual"> = </button>
+<p>	
+Operadores unitarios: 
+  <button id="cuadrado"> x<sup>2</sup> </button>
+  <button id="2an"> 2<sup>x</sup> </button>
+  <button id="inverso"> 1/x </button>
+  <button id="raiz"> sqrt(x) </button>
+  <button id="abs"> abs(x) </button>
+  <button id="factorial"> x! </button>
+	</p>
+<p>	
+Operadores binarios: 
+  <button id="mas"> + </button>
+  <button id="menos"> -</button>
+  <button id="multiplicacion"> x </button>
+  <button id="division"> / </button>
+  <button id="potencia"> x<sup>y</sup> </button>
+	</p>
+<p>	
+Operaciones con n operandos, separados con comas: 
+  <button id="sumatorio"> sumatorio </button>
+  <button id="productorio"> productorio</button>
+	</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Third pseudocódigo: I wanted to eat ice cream.
+
+Start: I am at the door of my house.
+• I close the door of my house.
+• I walk 29 steps to the ice cream shop.
+• Turn to the right.
+• I look at the price and products poster.
+• I choose the ice cream.
+• I pay for the ice cream.
+• I walk 29 steps to my house.
+• I open the door of my house.
+• I sit on a chair.
+End: I eat ice cream.

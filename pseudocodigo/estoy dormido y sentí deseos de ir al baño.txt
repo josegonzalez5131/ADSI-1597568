@@ -1,0 +1,22 @@
+Primer pseudocódigo: estoy dormido y sentí deseos de ir al baño 
+
+Inicio: Estoy acostado en mi cama
+•	Abro los ojos
+
+•	Me siento en la cama
+
+•	Me giro hacia la derecha
+
+•	Me pongo las chanclas
+
+•	Camino de frente
+
+•	Volteo hacia la derecha
+
+•	Bajo las escaleras
+
+•	Volteo hacia la izquierda dos veces
+
+•	Llego al baño
+
+•	Me bajo la bermuda Fin: hago mi necesidad

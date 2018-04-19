@@ -1,0 +1,21 @@
+Fourth pseudocodigo: I will go to SENA.
+
+Start: go to the bathroom.
+• Take a shower.
+• Dry me.
+• Exit the bathroom.
+• Turn right twice.
+• Climb the stairs.
+• Throw me deodorant.
+• Wear the uniform.
+• Pray.
+• Have breakfast.
+• Watch TV 5 minutes.
+• Get out of my room.
+• Comb my hair.
+• Brush me.
+• Give me perfume.
+• Leave my house.
+• Walk 3 blocks.
+• Turn to the right.
+End: get to SENA

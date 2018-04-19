@@ -1,0 +1,29 @@
+Segundo pseudocódigo: estoy en el comedor y me dieron ganas de comerme un huevo.
+
+Inicio: sentado en el comedor
+• Me levanto del comedor
+• Camino 12 pasos hasta la cocina
+• Volteo hacia la derecha
+• Camino 5 pasos hasta la nevera
+• Saco la mantequilla
+• Saco 2 huevos
+• Me volteo hacia la izquierda
+• Saco el sartén de la alacena
+• Camino 1 paso
+• Prendo la estufa
+• Pongo el sartén
+• Hecho la mantequilla
+• Hecho un poco de sal
+• Golpeo los huevos para romperlos
+• Hecho el huevo en el sartén
+• Espero 2 minutos
+• Saco el huevo
+• Apago la estufa
+• Saco un plato de la alacena
+• Pongo el huevo en el plato
+• Cojo una cuchara
+• Volteo hacia la izquierda
+• Volteo hacia la derecha
+• camino 12 pasos hasta el comedor
+• me siento en el comedor
+Fin: me como el huevo
